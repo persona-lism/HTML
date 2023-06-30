@@ -1,0 +1,58 @@
+#header_navigation {
+    display: flex;
+    background-color: #f1f1f1;
+    justify-content: space-between;
+    height: 50px;
+}
+
+#navigation {
+    display: flex;
+    gap: 15px;
+}
+
+#main_section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#title {
+    color: #800000;
+}
+
+#subtitle {
+    color: gray;
+    opacity: 0.8;
+}
+
+/* Checkpoint */
+#contactUs {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+#article {
+    flex-basis: 60%;
+    flex-grow: 0;
+    margin-left: 32px;
+}
+
+#article img {
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#article img:hover {
+    opacity: 0.8;
+}
+
+#form {
+    flex-basis: 40%;
+    flex-grow: 0;
+    background-color: #f1f1f1;
+    margin-right: 32px;
+    border-radius: 4px;
+}
