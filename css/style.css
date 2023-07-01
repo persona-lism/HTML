@@ -2,12 +2,30 @@
     display: flex;
     background-color: #f1f1f1;
     justify-content: space-between;
-    height: 50px;
+    height: 80px;
+    padding: 0 80px;
+    align-items: center;
 }
 
 #navigation {
     display: flex;
-    gap: 15px;
+    border: 1px black solid;
+    align-items: center;
+    height: 50px;
+}
+
+#link {
+    text-decoration: none;
+}
+
+#divide {
+    vertical-align: bottom;
+    height: 50px;
+    width: 100px;
+    line-height: 50px;
+    text-align: center;
+    justify-content: center;
+    border: 1px black solid;
 }
 
 #main_section {
@@ -56,3 +74,4 @@
     margin-right: 32px;
     border-radius: 4px;
 }
+
