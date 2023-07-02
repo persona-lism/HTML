@@ -1,6 +1,19 @@
+body {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #f1f1f1;
+}
+
+main {
+    background-color: white;
+}
+
 #header_navigation {
     display: flex;
-    background-color: #f1f1f1;
+    background-color: white;
     justify-content: space-between;
     height: 80px;
     padding: 0 80px;
@@ -9,13 +22,22 @@
 
 #navigation {
     display: flex;
-    border: 1px black solid;
     align-items: center;
     height: 50px;
+    border: 1px black solid;
+    border-radius: 8px;
 }
 
-#link {
+#link1, #link2, #link3 {
     text-decoration: none;
+}
+
+#link1 {
+    border-right: 1px black solid;
+}
+
+#link3 {
+    border-left: 1px black solid;
 }
 
 #divide {
@@ -25,13 +47,15 @@
     line-height: 50px;
     text-align: center;
     justify-content: center;
-    border: 1px black solid;
 }
 
 #main_section {
     align-items: center;
     display: flex;
     flex-direction: column;
+    background-color: white;
+    margin-top: 5px;
+    height: 150px;
 }
 
 #title {
@@ -73,5 +97,19 @@
     background-color: #f1f1f1;
     margin-right: 32px;
     border-radius: 4px;
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
 }
 
+#form h3, p, form {
+    margin: 8px 16px;
+}
+
+#form p {
+    color: gray;
+}
+
+.container2 {
+    padding: 32px;
+}
