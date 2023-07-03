@@ -3,6 +3,7 @@ body {
     margin: 0 auto;
     -webkit-box-shadow: 0 0 5px gray;
     box-shadow: 0 0 5px gray;
+    padding-bottom: 32px;
 }
 
 * {
@@ -137,7 +138,7 @@ main {
 }
 
 .container_form input, select {
-    padding: 8px;
+    padding: 12px;
     width: 100%;
     box-sizing: border-box;
     border-radius: 4px;
@@ -150,14 +151,14 @@ sup {
 
 #send_button {
     margin-top: 32px;
-    padding: 8px;
+    padding: 4px;
     background-color: #333333;
     width: 100%;
     box-sizing: border-box;
     cursor: pointer;
     border-radius: 4px;
     color: #f1f1f1;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 #article h5 {
@@ -165,4 +166,18 @@ sup {
     color: gray;
     margin: 24px 32px;
     font-style: italic;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    text-align: center;
+    display: table-cell;
+    background-color: #bbb;
+    vertical-align: middle;
+}
+
+.circle b {
+    display: block;
 }
