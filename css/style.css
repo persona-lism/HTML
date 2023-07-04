@@ -10,7 +10,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
+#head {
     background-color: #f1f1f1;
 }
 
@@ -87,7 +87,7 @@ main {
     margin-left: 32px;
 }
 
-#article img {
+#img1 {
     max-height: 100%;
     max-width: 100%;
     border-radius: 4px;
@@ -96,7 +96,7 @@ main {
     border: 2px white solid;
 }
 
-#article img:hover {
+#img1:hover {
     opacity: 0.8;
     border-radius: 8px;
     border: 2px gray solid;
@@ -170,14 +170,105 @@ sup {
 
 .circle {
     border-radius: 50%;
-    width: 64px;
-    height: 64px;
-    text-align: center;
-    display: table-cell;
-    background-color: #bbb;
+    width: 48px;
+    height: 48px;
+    background-color: #CCCCCC;
     vertical-align: middle;
+    color: #f1f1f1;
+    display: flex;
+    align-items: center;
 }
 
 .circle b {
-    display: block;
+    margin: auto;
 }
+
+#chatbox {
+    display: flex;
+}
+
+/* Precision-Checker
+#chatbox, #profileicon, #profiledescription, .circle {
+    border: 1px black solid;
+} */
+
+#chatbox {
+    overflow: auto;
+}
+
+#profiledescription {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 8px;
+    overflow: auto;
+    overflow-wrap: break-word;
+    word-break: break-all;
+}
+
+#profiledescription * {
+    margin: auto 10px;
+}
+
+#profileicon {
+    display: flex;
+    align-items: center;
+}
+
+#profileicon img {
+    width: 64px;
+    height: 64px;
+    background-color: #f1f1f1;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin: auto 0;
+}
+
+#explanation {
+    margin-top: 20px;
+}
+
+#explanation_header, #explanation_row {
+    display: flex;
+}
+  
+#explanation_col {
+    flex: 1;
+}
+
+.explanation_col p {
+    color: black;
+    font-weight: bold;
+    margin: 8px 0;
+    word-break: normal;
+    overflow-wrap: break-word;
+    text-align: left;
+    font-size: 14px;
+}
+
+#explanation_col1 {
+    display: flex;
+    align-items: center;
+    padding: 4px;
+}
+
+#explanation_col2 {
+    flex: 1;
+    overflow: auto;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    justify-content: left;
+    display: flex;
+    align-items: center;
+}
+
+#explanation_col2 p {
+    margin-left: 16px;
+    font-size: 12px;
+    margin-right: 16px;
+}
+
+/* Precision-Checker
+#explanation_col1, #explanation_col2, #explanation_col, #explanation_header, #explanation_row, #explanation {
+    border: 1px black solid;
+} */
