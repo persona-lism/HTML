@@ -7,57 +7,65 @@
         <title>E-Groceries</title>
     </head>
     <body>
-        <header id="head">
+        <header>
             <section id="header_navigation">
-                <a href="">Logo</a>
+                <a id="icon" href="">Logo yang sangat panjang</a>
                 <nav id="navigation">
-                        <a id="link1" href="#header_section"><div id="divide">Home</div></a>
-                        <a id="link2" href="#"><div id="divide">Our Packages</div></a>
-                        <a id="link3" href="#"><div id="divide">Contact Us</div></a>
+                    <div id="menu">
+                        <button id="menu_button">Home</button>
+                        <button id="menu_button">Our Packages</button>
+                        <button id="menu_button">Call Us</button>
+                    </div>
                 </nav>
             </section>
-            <section id="main_section">
-                <h1 id="title">Top Rated E-Groceries in Indonesia</h1>
-                <h3 id="subtitle">Description in here</h3>
-            </section>
+        </header>
+        <section id="main_section">
+            <hr id="header_line">
+            <h1 id="title">Top Rated E-Groceries in Indonesia</h1>
+            <h3 id="subtitle">Description in here</h3>
+        </section>
             <main>
                 <section id="contactUs">
                     <article id="article">
-                        <img id="img1" src="assets/background.webp">
+                        <img class="slideshow" id="img1" src="assets/supermarket1.jpg">
+                        <img class="slideshow" id="img1" src="assets/supermarket2.jpg">
+                        <img class="slideshow" id="img1" src="assets/supermarket3.jpg">
+                        <img class="slideshow" id="img1" src="assets/supermarket4.jpg">
+                        <img class="slideshow" id="img1" src="assets/supermarket5.jpg">
                         <h5>"setiap hari beli sayur buah yang fresh disini"</h5>
                         <div id="chatbox">
                             <div id="profileicon">
                                 <img src="assets/user.png">
                             </div>
                             <div id="profiledescription">
-                                <h3>Hansen Japri</h3>
-                                <p>Halo nama saya Hartanto, saya senang untuk berbelanja disini. :D</p>
+                                <h3 id="sender-full-name">Unknown Name</h3>
+                                <p id="sender-full-message">(please fill up the form to see the result!)</p>
                             </div>
                         </div>
 
                         <section id="explanation">
-                            <header id="explanation_header">
+                            <div id="explanation_header">
                                 <div class="explanation_col">
                                     <p>Use this space to provide users with more information about your offer. Consider it a follow-up to your headline and explain the benefits of your service or product</p>
                                 </div>
-                            </header>
+                            </div>
                             <div id="explanation_row">
                                 <div id="explanation_col1">
                                     <div class="circle"><b>1</b></div>
                                 </div>
-                                <div id="explanation_col2"><p>Halasjkdhasdjkhasdjhasjkdhasjkdhasjkdhaskjdhkasjdhaksjdhajksdhjkasdhjkasdhjkasdhkadhkjasdhkjashdjkasdhjkasdhkjasdhjkasdhjkashasjkdhajksdhajksdhajksdhjkasdhasjkdhasdjko</p></div>
+                                <div id="explanation_col2"><p>Your first feature, written in the form of a benefit statement.</p></div>
                             </div>
                             <div id="explanation_row">
                                 <div id="explanation_col1">
                                     <div class="circle"><b>2</b></div>
                                 </div>
-                                <div id="explanation_col2"><p>Halo</p></div>
+                                <div id="explanation_col2"><p>Your second feature, written in the form of a benefit statement.</p></div>
                             </div>
                             <div id="explanation_row">
                                 <div id="explanation_col1">
                                     <div class="circle"><b>3</b></div>
                                 </div>
-                                <div id="explanation_col2"><p>Halo</p></div>
+                                <div id="explanation_col2"><p>Your third feature, written in the form of a benefit statement.</p></div>
                             </div>
                         </section>
                     </article>
@@ -68,28 +76,34 @@
                             <p>Sales akan menghubungi anda dalam waktu 1x24 Jam setelah kami menerima data anda.</p>
                         </div>
                         <div class="container2">
-                            <form action="" method="post" class="container_form">
+                            <form name="message-form" method="post" class="container_form" onsubmit="return validateForm()">
                                 <h4>Your Name<sup>*</sup></h4>
-                                <input type="text" placeholder="Your first and last name" name="name" id="">
+                                <input type="text" placeholder="Your first and last name" name="full-name" id="">
                                 <br>
                                 <h4>Your Email<sup>*</sup></h4>
-                                <input type="email" placeholder="example@gmail.com" name="email" id="">
+                                <input type="email" placeholder="example@gmail.com" name="full-email" id="">
+                                <br>
+                                <h4>Your Phone Number<sup>*</sup></h4>
+                                <input type="number" placeholder="+62" name="full-number" id="">
+                                <br>
+                                <h4>Your Message<sup>*</sup></h4>
+                                <input type="text" placeholder="Hello World!" name="full-message" id="">
                                 <br>
                                 <h4>Select an option<sup>*</sup></h4>
                                 <select name="option" id="option-select">
                                     <option value="" disabled selected>Choose in here...</option>
-                                    <option value="option1">1st option</option>
-                                    <option value="option2">2nd option</option>
-                                    <option value="option3">3rd option</option>
-                                    <option value="option4">4th option</option>
-                                    <option value="option5">5th option</option>
+                                    <option value="option1">1st option (unavailable)</option>
+                                    <option value="option2">2nd option (unavailable)</option>
+                                    <option value="option3">3rd option (unavailable)</option>
+                                    <option value="option4">4th option (unavailable)</option>
+                                    <option value="option5">5th option (unavailable)</option>
                                 </select>
-                                <button type="submit" id="send_button">SEND</button>
+                                <button type="submit" id="send_button"><p>SEND</p></button>
                             </form>
                         </div>
                     </section>
                 </section>
             </main>
-        </header>
+        <script src="js/script.js"></script>
     </body>
 </html>

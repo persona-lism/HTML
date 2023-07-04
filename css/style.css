@@ -1,9 +1,57 @@
 body {
-    max-width: 960px;
+    width: 1024;
     margin: 0 auto;
     -webkit-box-shadow: 0 0 5px gray;
-    box-shadow: 0 0 5px gray;
+    box-shadow: 0 0 5px rgb(255, 229, 229);
     padding-bottom: 32px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        width: 100%;
+        margin: 0 auto;
+        -webkit-box-shadow: 0 0 5px gray;
+        box-shadow: 0 0 5px gray;
+        padding-bottom: 32px;
+    }
+
+    #header_navigation {
+        flex-direction: column;
+    }
+
+    #menu {
+        flex-direction: column;
+    }
+
+    #icon {
+        margin-bottom: 10px;
+    }
+
+    * {
+        flex-direction: column;
+    }
+
+    #menu {
+        flex-direction: column;
+    }
+
+    .container1 {
+        padding-top: 8px;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-bottom: 4px;
+    }
+    
+    .container2 {
+        padding-top: 4px;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-bottom: 8px;
+    }
+    
+    .container_form input, select {
+        padding: 6px;
+    }
 }
 
 * {
@@ -22,38 +70,24 @@ main {
     display: flex;
     background-color: white;
     justify-content: space-between;
-    height: 80px;
-    padding: 0 80px;
+    padding: 20px 80px;
     align-items: center;
+}
+
+#header_line {
+    border: 5px solid green;
+    border-radius: 5px;
+    width: 80%;
+}
+
+#menu {
+    display: flex;
 }
 
 #navigation {
     display: flex;
     align-items: center;
-    height: 50px;
-    border: 1px black solid;
     border-radius: 8px;
-}
-
-#link1, #link2, #link3 {
-    text-decoration: none;
-}
-
-#link1 {
-    border-right: 1px black solid;
-}
-
-#link3 {
-    border-left: 1px black solid;
-}
-
-#divide {
-    vertical-align: bottom;
-    height: 50px;
-    width: 120px;
-    line-height: 50px;
-    text-align: center;
-    justify-content: center;
 }
 
 #main_section {
@@ -67,11 +101,13 @@ main {
 
 #title {
     color: #800000;
+    text-align: center;
 }
 
 #subtitle {
     color: gray;
     opacity: 0.8;
+    text-align: center;
 }
 
 /* Checkpoint */
@@ -157,6 +193,10 @@ sup {
     box-sizing: border-box;
     cursor: pointer;
     border-radius: 4px;
+}
+
+#send_button p {
+    text-align: center;
     color: #f1f1f1;
     font-size: 18px;
 }
@@ -272,3 +312,22 @@ sup {
 #explanation_col1, #explanation_col2, #explanation_col, #explanation_header, #explanation_row, #explanation {
     border: 1px black solid;
 } */
+
+#menu_button {
+    background-color: white;
+    padding: 16px 32px;
+    border: 1px solid gray;
+    cursor: pointer;
+    transition: 0.5s background-color ease-out;
+    margin: 4px;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+#menu_button:hover {
+    background-color: gray;
+}
+
+#menu {
+    display: flex;
+}
