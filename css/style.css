@@ -45,7 +45,7 @@ body {
         padding-bottom: 8px;
     }
     
-    .container_form input, select {
+    .container_form input, select, textarea {
         padding: 6px;
     }
 
@@ -221,7 +221,7 @@ main {
     padding-bottom: 16px;
 }
 
-.container_form input, select {
+.container_form input, select, textarea {
     padding: 12px;
     width: 100%;
     box-sizing: border-box;
@@ -446,4 +446,8 @@ sup {
 #header_navigation img {
     width: 64px;
     height: 64px;
+}
+
+.container_form textarea{
+    resize: none;
 }

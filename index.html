@@ -49,7 +49,6 @@
                   </p>
                 </div>
               </div>
-
               <section id="explanation">
                 <div id="explanation_header">
                   <div class="explanation_col">
@@ -107,19 +106,19 @@
               <div class="container2">
                 <form name="message-form" method="post" class="container_form" onsubmit="return validateForm()">
                   <h4>Your Name<sup>*</sup></h4>
-                  <input type="text" placeholder="Your first and last name" name="full-name" id="" />
+                  <input type="text" placeholder="Your first and last name" name="full-name" id="" required />
                   <br />
                   <h4>Your Email<sup>*</sup></h4>
-                  <input type="email" placeholder="example@gmail.com" name="full-email" id="" />
+                  <input type="email" placeholder="example@gmail.com" name="full-email" id="" required />
                   <br />
                   <h4>Your Phone Number<sup>*</sup></h4>
-                  <input type="number" placeholder="+62" name="full-number" id="" />
+                  <input type="number" placeholder="+62" name="full-number" id="" required />
                   <br />
                   <h4>Your Message<sup>*</sup></h4>
-                  <input type="text" placeholder="Hello World!" name="full-message" id="" />
+                  <textarea name="full-message" cols="30" rows="6" placeholder="Hello World!" required>I often buy things from this place, since there's alot of discount I can get from this market.</textarea>
                   <br />
                   <h4>Select an option<sup>*</sup></h4>
-                  <select name="option" id="option-select">
+                  <select name="option" id="option-select" required>
                     <option value="" disabled selected>Choose in here...</option>
                     <option value="option1">1st option (unavailable)</option>
                     <option value="option2">2nd option (unavailable)</option>
@@ -237,5 +236,4 @@
   </main>
   <script src="js/script.js"></script>
 </body>
-
 </html>
