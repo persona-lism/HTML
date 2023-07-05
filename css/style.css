@@ -1,5 +1,5 @@
 body {
-    width: 1024;
+    width: 1024px;
     margin: 0 auto;
     -webkit-box-shadow: 0 0 5px gray;
     box-shadow: 0 0 5px rgb(255, 229, 229);
@@ -57,6 +57,16 @@ body {
     #fourth-desc, #fifth-desc, #sixth-desc {
         flex-direction: column;
     }
+
+    .div-king {
+        flex-direction: column;
+    }
+
+    .divi1 {
+        justify-content: center;
+        align-items: center;
+        margin-top: 32px;
+    }
 }
 
 * {
@@ -101,7 +111,7 @@ main {
     flex-direction: column;
     background-color: white;
     margin-top: 5px;
-    height: 150px;
+    padding: 16px;
 }
 
 #sender-full-email {
@@ -121,26 +131,26 @@ main {
 
 /* Checkpoint */
 #contactUs {
-    display: flex;
-    flex-direction: row;
     gap: 16px;
 }
 
 #article {
-    flex-basis: 60%;
+    display: flex;
     flex-grow: 0;
+    flex-direction: column;
     margin-left: 32px;
+    margin-right: 32px;
     word-break: break-all;
     overflow-wrap: break-word;
 }
 
 #img1 {
-    max-height: 100%;
-    max-width: 100%;
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.5s ease;
     border: 2px white solid;
+    width: 100%;
+    height: auto;
 }
 
 #img1:hover {
@@ -149,15 +159,19 @@ main {
     border: 2px gray solid;
 }
 
+main {
+    margin-top: 32px;
+}
+
 #form {
-    flex-basis: 40%;
     flex-grow: 0;
     background-color: #f1f1f1;
-    margin-right: 32px;
+    margin-left: 32px;
     border-radius: 4px;
     justify-content: space-between;
     flex-direction: column;
     display: flex;
+    justify-content: center;
 }
 
 #form h3, p, form {
@@ -170,18 +184,41 @@ main {
     text-align: justify;
 }
 
+.divi {
+    display: flex;
+    flex: 50%;
+    flex-direction: column;
+}
+
+.divi1 {
+    display: flex;
+    flex: 50%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.divi2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-king {
+    display: flex;
+    margin-top: 20px;
+}
+
 .container1 {
-    padding-top: 16px;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-bottom: 16px;
+    padding-top: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 8px;
 }
 
 .container2 {
-    padding-top: 16px;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-bottom: 32px;
+    padding-top: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
 }
 
 .container_form input, select {
@@ -402,4 +439,9 @@ sup {
 
 #closing-footer p {
     font-size: 12px;
+}
+
+#header_navigation img {
+    width: 64px;
+    height: 64px;
 }
