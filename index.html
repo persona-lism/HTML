@@ -1,109 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-        <title>E-Groceries</title>
-    </head>
-    <body>
-        <header>
-            <section id="header_navigation">
-                <a id="icon" href="">Logo yang sangat panjang</a>
-                <nav id="navigation">
-                    <div id="menu">
-                        <button id="menu_button">Home</button>
-                        <button id="menu_button">Our Packages</button>
-                        <button id="menu_button">Call Us</button>
-                    </div>
-                </nav>
-            </section>
-        </header>
-        <section id="main_section">
-            <hr id="header_line">
-            <h1 id="title">Top Rated E-Groceries in Indonesia</h1>
-            <h3 id="subtitle">Description in here</h3>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>E-Groceries</title>
+  </head>
+  <body>
+    <header>
+      <section id="header_navigation">
+        <a id="icon" href="">Logo</a>
+        <nav id="navigation">
+          <div id="menu">
+            <button id="menu_button">Home</button>
+            <button id="menu_button">Our Packages</button>
+            <button id="menu_button">Call Us</button>
+          </div>
+        </nav>
+      </section>
+    </header>
+    <section id="main_section">
+      <hr id="header_line" />
+      <h1 id="title">Top Rated E-Groceries in Indonesia</h1>
+      <h3 id="subtitle">Description in here</h3>
+    </section>
+    <main>
+      <section id="contactUs">
+        <article id="article">
+          <img class="slideshow" id="img1" src="assets/supermarket1.jpg" />
+          <img class="slideshow" id="img1" src="assets/supermarket2.jpg" />
+          <img class="slideshow" id="img1" src="assets/supermarket3.jpg" />
+          <img class="slideshow" id="img1" src="assets/supermarket4.jpg" />
+          <img class="slideshow" id="img1" src="assets/supermarket5.jpg" />
+          <h5 id="sender-full-message">...</h5>
+          <div id="chatbox">
+            <div id="profileicon">
+              <img src="assets/user.png" />
+            </div>
+            <div id="profiledescription">
+              <h3 id="sender-full-name">Unknown Name</h3>
+              <p id="sender-full-email">
+                (please fill up the form to see the result!)
+              </p>
+            </div>
+          </div>
+
+          <section id="explanation">
+            <div id="explanation_header">
+              <div class="explanation_col">
+                <p>
+                  Use this space to provide users with more information about
+                  your offer. Consider it a follow-up to your headline and
+                  explain the benefits of your service or product
+                </p>
+              </div>
+            </div>
+            <div id="explanation_row">
+              <div id="explanation_col1">
+                <div class="circle"><b>1</b></div>
+              </div>
+              <div id="explanation_col2">
+                <p>
+                  Your first feature, written in the form of a benefit
+                  statement.
+                </p>
+              </div>
+            </div>
+            <div id="explanation_row">
+              <div id="explanation_col1">
+                <div class="circle"><b>2</b></div>
+              </div>
+              <div id="explanation_col2">
+                <p>
+                  Your second feature, written in the form of a benefit
+                  statement.
+                </p>
+              </div>
+            </div>
+            <div id="explanation_row">
+              <div id="explanation_col1">
+                <div class="circle"><b>3</b></div>
+              </div>
+              <div id="explanation_col2">
+                <p>
+                  Your third feature, written in the form of a benefit
+                  statement.
+                </p>
+              </div>
+            </div>
+          </section>
+        </article>
+
+        <section id="form">
+          <div class="container1">
+            <h3>Contact Us</h3>
+            <p>
+              Sales akan menghubungi anda dalam waktu 1x24 Jam setelah kami
+              menerima data anda.
+            </p>
+          </div>
+          <div class="container2">
+            <form
+              name="message-form"
+              method="post"
+              class="container_form"
+              onsubmit="return validateForm()"
+            >
+              <h4>Your Name<sup>*</sup></h4>
+              <input
+                type="text"
+                placeholder="Your first and last name"
+                name="full-name"
+                id=""
+              />
+              <br />
+              <h4>Your Email<sup>*</sup></h4>
+              <input
+                type="email"
+                placeholder="example@gmail.com"
+                name="full-email"
+                id=""
+              />
+              <br />
+              <h4>Your Phone Number<sup>*</sup></h4>
+              <input type="number" placeholder="+62" name="full-number" id="" />
+              <br />
+              <h4>Your Message<sup>*</sup></h4>
+              <input
+                type="text"
+                placeholder="Hello World!"
+                name="full-message"
+                id=""
+              />
+              <br />
+              <h4>Select an option<sup>*</sup></h4>
+              <select name="option" id="option-select">
+                <option value="" disabled selected>Choose in here...</option>
+                <option value="option1">1st option (unavailable)</option>
+                <option value="option2">2nd option (unavailable)</option>
+                <option value="option3">3rd option (unavailable)</option>
+                <option value="option4">4th option (unavailable)</option>
+                <option value="option5">5th option (unavailable)</option>
+              </select>
+              <button type="submit" id="send_button"><p>SEND</p></button>
+            </form>
+          </div>
         </section>
-            <main>
-                <section id="contactUs">
-                    <article id="article">
-                        <img class="slideshow" id="img1" src="assets/supermarket1.jpg">
-                        <img class="slideshow" id="img1" src="assets/supermarket2.jpg">
-                        <img class="slideshow" id="img1" src="assets/supermarket3.jpg">
-                        <img class="slideshow" id="img1" src="assets/supermarket4.jpg">
-                        <img class="slideshow" id="img1" src="assets/supermarket5.jpg">
-                        <h5>"setiap hari beli sayur buah yang fresh disini"</h5>
-                        <div id="chatbox">
-                            <div id="profileicon">
-                                <img src="assets/user.png">
-                            </div>
-                            <div id="profiledescription">
-                                <h3 id="sender-full-name">Unknown Name</h3>
-                                <p id="sender-full-message">(please fill up the form to see the result!)</p>
-                            </div>
-                        </div>
+      </section>
 
-                        <section id="explanation">
-                            <div id="explanation_header">
-                                <div class="explanation_col">
-                                    <p>Use this space to provide users with more information about your offer. Consider it a follow-up to your headline and explain the benefits of your service or product</p>
-                                </div>
-                            </div>
-                            <div id="explanation_row">
-                                <div id="explanation_col1">
-                                    <div class="circle"><b>1</b></div>
-                                </div>
-                                <div id="explanation_col2"><p>Your first feature, written in the form of a benefit statement.</p></div>
-                            </div>
-                            <div id="explanation_row">
-                                <div id="explanation_col1">
-                                    <div class="circle"><b>2</b></div>
-                                </div>
-                                <div id="explanation_col2"><p>Your second feature, written in the form of a benefit statement.</p></div>
-                            </div>
-                            <div id="explanation_row">
-                                <div id="explanation_col1">
-                                    <div class="circle"><b>3</b></div>
-                                </div>
-                                <div id="explanation_col2"><p>Your third feature, written in the form of a benefit statement.</p></div>
-                            </div>
-                        </section>
-                    </article>
-
-                    <section id="form">
-                        <div class="container1">
-                            <h3>Contact Us</h3>
-                            <p>Sales akan menghubungi anda dalam waktu 1x24 Jam setelah kami menerima data anda.</p>
-                        </div>
-                        <div class="container2">
-                            <form name="message-form" method="post" class="container_form" onsubmit="return validateForm()">
-                                <h4>Your Name<sup>*</sup></h4>
-                                <input type="text" placeholder="Your first and last name" name="full-name" id="">
-                                <br>
-                                <h4>Your Email<sup>*</sup></h4>
-                                <input type="email" placeholder="example@gmail.com" name="full-email" id="">
-                                <br>
-                                <h4>Your Phone Number<sup>*</sup></h4>
-                                <input type="number" placeholder="+62" name="full-number" id="">
-                                <br>
-                                <h4>Your Message<sup>*</sup></h4>
-                                <input type="text" placeholder="Hello World!" name="full-message" id="">
-                                <br>
-                                <h4>Select an option<sup>*</sup></h4>
-                                <select name="option" id="option-select">
-                                    <option value="" disabled selected>Choose in here...</option>
-                                    <option value="option1">1st option (unavailable)</option>
-                                    <option value="option2">2nd option (unavailable)</option>
-                                    <option value="option3">3rd option (unavailable)</option>
-                                    <option value="option4">4th option (unavailable)</option>
-                                    <option value="option5">5th option (unavailable)</option>
-                                </select>
-                                <button type="submit" id="send_button"><p>SEND</p></button>
-                            </form>
-                        </div>
-                    </section>
-                </section>
-            </main>
-        <script src="js/script.js"></script>
-    </body>
+      <section id="ourPackages">
+        <h1>Our Packages</h1>
+      </section>
+      <div class="packages">
+        <div class="first-third">
+          <div id="first-desc">
+            <div id="explanation_col1">
+              <div class="circle">
+                <b>1</b>
+              </div>
+            </div>
+            <div id="explanation_col2">
+              <p>
+                Your first feature, written in the form of a benefit statement.
+              </p>
+            </div>
+          </div>
+          <div id="second-desc">
+            <div id="explanation_col1">
+              <div class="circle">
+                <b>2</b>
+              </div>
+            </div>
+            <div id="explanation_col2">
+              <p>
+                Your first feature, written in the form of a benefit statement.
+              </p>
+            </div>
+          </div>
+          <div id="third-desc">
+            <div id="explanation_col1">
+              <div class="circle">
+                <b>3</b>
+              </div>
+            </div>
+            <div id="explanation_col2">
+              <p>
+                Your first feature, written in the form of a benefit statement.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="fourth-sixth">
+          <div id="fourth-desc">
+            <div id="explanation_col1">
+              <div class="circle">
+                <b>4</b>
+              </div>
+            </div>
+            <div id="explanation_col2">
+              <p>
+                Your first feature, written in the form of a benefit statement.
+              </p>
+            </div>
+          </div>
+          <div id="fifth-desc">
+            <div id="explanation_col1">
+              <div class="circle">
+                <b>5</b>
+              </div>
+            </div>
+            <div id="explanation_col2">
+              <p>
+                Your first feature, written in the form of a benefit statement.
+              </p>
+            </div>
+          </div>
+          <div id="sixth-desc">
+            <div id="explanation_col1">
+              <div class="circle">
+                <b>6</b>
+              </div>
+            </div>
+            <div id="explanation_col2">
+              <p>
+                Your first feature, written in the form of a benefit statement.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <nav id="closing">
+          <h1>Your Closing Argument</h1>
+          <p>Closing</p>
+        </nav>
+        <section id="closing-footer">
+          <h2>Moqups</h2>
+          <div class="divider">
+            <p><a href="">Terms of Service</a></p>
+            <p><a href="">Privacy Policy</a></p>
+          </div>
+          <p>Copyright 2023 Edwin Hermili</p>
+        </section>
+      </footer>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
 </html>

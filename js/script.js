@@ -8,6 +8,7 @@ function validateForm() {
     return false;
     }
     document.getElementById("sender-full-name").innerText = name;
+    document.getElementById("sender-full-email").innerText = email;
     document.getElementById("sender-full-message").innerText = message;
     return false;
 }

@@ -27,10 +27,6 @@ body {
         margin-bottom: 10px;
     }
 
-    * {
-        flex-direction: column;
-    }
-
     #menu {
         flex-direction: column;
     }
@@ -51,6 +47,15 @@ body {
     
     .container_form input, select {
         padding: 6px;
+    }
+
+    .packages {
+        flex-direction: column;
+    }
+
+    #first-desc, #second-desc, #third-desc,
+    #fourth-desc, #fifth-desc, #sixth-desc {
+        flex-direction: column;
     }
 }
 
@@ -99,6 +104,10 @@ main {
     height: 150px;
 }
 
+#sender-full-email {
+    color: #333333;
+}
+
 #title {
     color: #800000;
     text-align: center;
@@ -121,6 +130,8 @@ main {
     flex-basis: 60%;
     flex-grow: 0;
     margin-left: 32px;
+    word-break: break-all;
+    overflow-wrap: break-word;
 }
 
 #img1 {
@@ -330,4 +341,65 @@ sup {
 
 #menu {
     display: flex;
+}
+
+#ourPackages {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    margin-top: 32px;
+    padding: 50px;
+}
+
+.first-third, .fourth-sixth  {
+    display: flex;
+    margin-top: 20px;
+}
+
+.packages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#first-desc, #second-desc, #third-desc,
+#fourth-desc, #fifth-desc, #sixth-desc {
+    display: flex;
+}
+
+#closing {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 2.5px #CCCCCC solid;
+    border-bottom: 2.5px #CCCCCC solid;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding: 48px;
+}
+
+#closing h1, p {
+    margin-top: auto;
+}
+
+#closing-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divider {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 32px;
+}
+
+.divider a  {
+    text-decoration: none;
+}
+
+#closing-footer p {
+    font-size: 12px;
 }
