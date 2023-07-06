@@ -14,9 +14,9 @@
       <img src="assets/logo.svg" />
       <nav id="navigation">
         <div id="menu">
-          <button id="menu_button">Home</button>
-          <button id="menu_button">Our Packages</button>
-          <button id="menu_button">Call Us</button>
+          <button id="menu_button" onClick="window.location='#navigation'">Home</button>
+          <button id="menu_button" onClick="window.location='#ourPackages'">Our Packages</button>
+          <button id="menu_button" onClick="window.location='#closing'">Call Us</button>
         </div>
       </nav>
     </section>
@@ -24,7 +24,7 @@
   <section id="main_section">
     <hr id="header_line" />
     <h1 id="title">Top Rated E-Groceries in Indonesia</h1>
-    <h3 id="subtitle">Description in here</h3>
+    <h3 id="subtitle">Everyday with Best Ingredients!</h3>
   </section>
   <main>
     <section id="contactUs">
@@ -49,13 +49,14 @@
                   </p>
                 </div>
               </div>
+              <br>
+              <hr id="profile-line">
               <section id="explanation">
                 <div id="explanation_header">
                   <div class="explanation_col">
                     <p>
-                      Use this space to provide users with more information about
-                      your offer. Consider it a follow-up to your headline and
-                      explain the benefits of your service or product
+                      Why shopping in this supermarket place? What are the
+                      benefits by shopping from this supermarket?
                     </p>
                   </div>
                 </div>
@@ -65,8 +66,7 @@
                   </div>
                   <div id="explanation_col2">
                     <p>
-                      Your first feature, written in the form of a benefit
-                      statement.
+                      We gives a lot of discounts along with promos every week!
                     </p>
                   </div>
                 </div>
@@ -76,8 +76,7 @@
                   </div>
                   <div id="explanation_col2">
                     <p>
-                      Your second feature, written in the form of a benefit
-                      statement.
+                      We always provide the best service for our dearest customers!
                     </p>
                   </div>
                 </div>
@@ -87,8 +86,7 @@
                   </div>
                   <div id="explanation_col2">
                     <p>
-                      Your third feature, written in the form of a benefit
-                      statement.
+                      We provide free fasilities (Parking spaces, ATM services, Restrooms, etc.) for only you!
                     </p>
                   </div>
                 </div>
@@ -144,76 +142,85 @@
     <div class="packages">
       <div class="first-third">
         <div id="first-desc">
-          <div id="explanation_col1">
+          <div id="explanation_cols">
             <div class="circle">
               <b>1</b>
             </div>
           </div>
-          <div id="explanation_col2">
+          <div id="explanation_col3">
+            <h3>Fresh Vegetables</h3>
             <p>
-              Your first feature, written in the form of a benefit statement.
+              Best quality vegetables imported from other countries.
             </p>
           </div>
         </div>
         <div id="second-desc">
-          <div id="explanation_col1">
+          <div id="explanation_cols">
             <div class="circle">
               <b>2</b>
             </div>
           </div>
-          <div id="explanation_col2">
+          <div id="explanation_col3">
+            <h3>Fresh Fruits</h3>
             <p>
-              Your first feature, written in the form of a benefit statement.
+              Best high-grade quality fruits imported from other countries.
             </p>
           </div>
         </div>
         <div id="third-desc">
-          <div id="explanation_col1">
+          <div id="explanation_cols">
             <div class="circle">
               <b>3</b>
             </div>
           </div>
-          <div id="explanation_col2">
+          <div id="explanation_col3">
+            <h3>Fresh Meats</h3>
             <p>
-              Your first feature, written in the form of a benefit statement.
+              Best high-grade quality meats imported from Australia.
             </p>
           </div>
         </div>
       </div>
+      <br>
+      <hr id="profile-line">
+      <br>
       <div class="fourth-sixth">
         <div id="fourth-desc">
-          <div id="explanation_col1">
+          <div id="explanation_cols">
             <div class="circle">
               <b>4</b>
             </div>
           </div>
-          <div id="explanation_col2">
+          <div id="explanation_col3">
+            <h3>Free Delivery</h3>
             <p>
-              Your first feature, written in the form of a benefit statement.
+              Delivered by professional couriers to keep your order intact.
             </p>
           </div>
         </div>
         <div id="fifth-desc">
-          <div id="explanation_col1">
+          <div id="explanation_cols">
             <div class="circle">
               <b>5</b>
             </div>
           </div>
-          <div id="explanation_col2">
+          <div id="explanation_col3">
+            <h3>Cooking Set</h3>
             <p>
-              Your first feature, written in the form of a benefit statement.
+              Best high-grade quality cooking sets imported from Japan.
             </p>
           </div>
         </div>
         <div id="sixth-desc">
-          <div id="explanation_col1">
+          <div id="explanation_cols">
             <div class="circle">
               <b>6</b>
             </div>
           </div>
-          <div id="explanation_col2">
+          <div id="explanation_col3">
+            <h3>Cooking Ingredients</h3>
             <p>
-              Your first feature, written in the form of a benefit statement.
+              Best high-grade quality cooking ingredients.
             </p>
           </div>
         </div>
@@ -221,16 +228,18 @@
     </div>
     <footer>
       <nav id="closing">
-        <h1>Your Closing Argument</h1>
-        <p>Closing</p>
+        <h1>THANK YOU</h1>
+        <p>Thank you for being our loyal customers!</p>
+        <br>
+        <button id="closing-button" onClick="window.location='#form'">CALL TO ACTION</button>
       </nav>
       <section id="closing-footer">
-        <h2>Moqups</h2>
+        <h2>Supermarket</h2>
         <div class="divider">
           <p><a href="">Terms of Service</a></p>
           <p><a href="">Privacy Policy</a></p>
         </div>
-        <p>Copyright 2023 Edwin Hermili</p>
+        <p>Copyright © 2023 Moqups</p>
       </section>
     </footer>
   </main>
